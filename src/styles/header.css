@@ -19,3 +19,9 @@
     text-transform: capitalize;
     color: #fff;
 }
+
+@media (max-width:790px) {
+    .page-header {
+        margin-top: 0;
+    }
+}

@@ -1,6 +1,7 @@
 #committee-members {
     display: flex;
-
+    flex-direction: row;
+    justify-content: center;
 }
 
 #committee .bio {

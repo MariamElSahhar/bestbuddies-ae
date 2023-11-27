@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
@@ -21,7 +21,7 @@ import Events from './pages/Get-Involved/Events';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="events" element={<Events />} />
         </Routes>
         <ScrollToTop />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

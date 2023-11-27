@@ -27,3 +27,14 @@
 #friendship-page #coming-soon {
     background-color: var(--yellow);
 }
+
+@media (max-width:790px){
+    .two-col {
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    .col {
+        width: 90%;
+    }
+}

@@ -27,9 +27,9 @@
 }
 
 #pillars-wrapper {
+    display: flex;
     flex: 1;
     align-items: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -79,10 +79,24 @@
         height: 80%;
         width: 30%;
     }
+    #about-page h1 {
+        font-size: 1.25rem;
+    }
+    #pillars-wrapper h2 {
+        font-size: 1.25rem;
+    }
+    #about-page h3 {
+        font-size: 0.8rem;
+    }
+    #about-page #pillars-wrapper {
+        text-align: left;
+        justify-content: left;
+        align-items: flex-start;
+    }
     #about-page .two-col {
         flex-direction: column;
     }
-    #about-page  .two-col .col {
+    #about-page .two-col .col {
         width: 100%;
     }
     #about-page .two-col section {
