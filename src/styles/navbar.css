@@ -1,0 +1,232 @@
+/* NAVIGATION BAR */
+nav {
+    align-items: stretch;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+/* NAVBAR TOP */
+.navbar-top {
+    background-color: var(--background-purple);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 6rem;
+    padding-left: 6rem;
+
+}
+
+/* LANGUAGE SWITCH & GLOBAL WEBSITE LINK */
+.navbar-top button {
+    border: none;
+    cursor: pointer;
+    color: var(--font-purple);
+    font-weight: 500;
+    font-size: 20px;
+    background-color: var(--background-purple);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    height: 100%;
+    width: auto;
+    font-size: 1rem;
+}
+
+.navbar-top button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* NAVBAR BOTTOM */
+
+.navbar-bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+.navbar-bottom ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    height: 100%;
+}
+
+.navbar-bottom li {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navbar-bottom a {
+    color: var(--font-purple);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navbar-bottom .navbar-li:hover {
+    box-shadow: inset 0px -2px 0px 0px var(--font-purple);
+    cursor: pointer;
+}
+
+li[id="/donate"] {
+    background-color: var(--font-purple);
+}
+
+li[id="/donate"] a {
+    color: #fff;
+}
+
+/* LOGO */
+
+nav .logo-ill {
+    transform: translateY(0%);
+    margin-bottom: 2rem;
+    height: 6rem;
+}
+
+.donate { 
+    background-color: var(--font-purple);
+    margin: 0;
+    cursor: pointer;
+}
+
+.donate a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.donate:hover {
+    background-color: var(--light-purple);
+}
+
+.navbar-bottom .selected {
+    box-shadow: inset 0px -2px 0px 0px var(--font-purple);
+    cursor: default;
+}
+
+.navbar-li{
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  height: fit-content;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Show dropdown on hover */
+.navbar-li:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-bottom .navbar-li .dropdown-item {
+    padding: 1rem;
+}
+
+.dropdown-item {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: var(--background-purple);
+}
+
+.dropdown-wrapper {
+    width: fit-content;
+}
+
+/* HAMBURGER */
+
+.fa-bars {
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--font-purple)
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger .hide {
+    display: none;
+}
+
+#hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    align-items: left;
+    top: 100%;
+    left: 0;
+    height: fit-content;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+}
+#hamburger li {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+#hamburger .dropdown-menu {
+    display: block;
+    z-index: 0;
+}
+
+.hamburger-dropdown-button {
+    background-color: white;
+    border: none;
+    color: var(--font-purple);
+    font-size: 1.25rem;
+}
+
+#hamburger .subpage-li {
+    padding-left: 4rem;
+}
+
+@media (max-width:1000px){
+    .navbar-bottom, .navbar-top {
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+}
+@media (max-width:790px){
+    .navbar-bottom .navbar-wide {
+        display: none;
+    }
+    .navbar-bottom {
+        padding-right: 2rem;
+    }
+    #hamburger-menu .show {
+        display: block;
+    }
+    .navbar-bottom #hamburger {
+        display: block;
+        font-size: 2rem;
+        color: var(--font-purple)
+    }
+    nav {
+        position: relative;
+
+    }
+}

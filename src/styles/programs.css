@@ -1,0 +1,29 @@
+#programs-page section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1 2;
+}
+
+.col {
+    margin: 2rem;
+    width: 50%;
+}
+
+#leadership-page #coming-soon {
+    background-color: var(--orange);
+}
+
+#employment-page #coming-soon {
+    background-color: var(--green);
+}
+
+#friendship-page #coming-soon {
+    background-color: var(--yellow);
+}

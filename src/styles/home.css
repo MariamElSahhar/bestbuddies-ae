@@ -1,0 +1,249 @@
+/* HEADER */
+.home-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    max-height: 50%;
+    overflow: hidden;
+    margin-top: 115px;
+    /* margin: 1rem; */
+}
+
+/* BANNER IMAAGE */
+.banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: image("images/main-header.jpeg"); */
+    /* height: ; */
+}
+
+.banner h1, .banner p{
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.banner-text {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 64, 153, 0.6);
+    background: rgb(54,45,7);
+    background: linear-gradient(137deg, rgba(54,45,7,.7) 25%, rgba(26,37,35,.7) 50%, rgba(40,20,9,.7) 75%, rgba(49,50,68,.7) 100%);
+}
+/* PROGRAM OVERVIEW */
+.program h2 {
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 0.7rem;
+}
+
+.program-friendships h2 {
+    background-color: var(--yellow);
+}
+
+.program-employment h2 {
+    background-color: var(--green);
+}
+
+.program-leadership h2 {
+    color: #222;
+    background-color: var(--orange);
+}
+
+.program p {
+    color: var(--font);
+    padding: 1rem;
+}
+
+.program img {
+    width: 100%;
+}
+
+.section-item {
+    margin-top: 1rem;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.program-friendships {
+    background-color: var(--light-yellow);
+    border-top: 10px solid var(--yellow);
+    border-bottom: 10px solid var(--yellow);
+}
+
+.program button {
+    border: none;
+    padding: 1rem;
+    margin: 1rem auto 2rem auto;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.program a {
+    /* font-weight: 450; */
+    color: #222;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.program-friendships button {
+    background-color: var(--yellow);
+}
+
+.program-employment button {
+    background-color: var(--green);
+}
+
+.program-leadership button {
+    background-color: var(--orange);
+}
+
+.program-employment {
+    background-color: var(--light-green);
+    border-top: 10px solid var(--green);
+    border-bottom: 10px solid var(--green);
+}
+
+.program-leadership {
+    background-color: var(--light-orange);
+    border-top: 10px solid var(--orange);
+    border-bottom: 10px solid var(--orange);
+}
+
+/* JOIN */
+.home section {
+    display: grid;
+    /* flex-direction: column; */
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.section-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    justify-items: center;
+    width: 90%;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.section-item {
+    margin: 0rem 2rem 0rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-item {
+    background-color: var(--light-purple);
+}
+
+.join-item button {
+    background-color: var(--font-purple);
+    justify-content: center;
+    color: white;
+    border: none;
+    padding: 1rem;
+    /* font-weight: 200; */
+    margin: 0;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.join-item img {
+    width: 100%;
+    height: auto;
+}
+
+.home .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:850px) and (max-width: 1200px) {
+    .program h2 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:850px) {
+    .banner {
+        height: 40vh;
+        /* width: fit-content; */
+        overflow: hidden;
+    }
+    .banner img {
+        height: 100%;
+        width: auto;
+    }
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .program {
+        display: flex;
+        justify-content: center;
+    }
+    .section-item {
+        max-width: 60%;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .section-item p {
+        /* max-height: 20%; */
+        /* height: 40vh; */
+        /* width: auto; */
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:790px) {
+
+    .home-header {
+        margin-top: 0;
+    }
+}

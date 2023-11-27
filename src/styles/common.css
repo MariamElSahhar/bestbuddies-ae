@@ -1,0 +1,129 @@
+:root {
+    /* 90, 64, 153 */
+    --font-purple: #5A4099;
+    --font: #333;
+    --background-grey: #f6f6f6;
+    --light-purple: #9396CB;
+    --background-purple: #F4F4FA;
+    /* friendships */
+    --yellow: #FFD420; 
+    /* rgb(255,212,32) */
+    --light-yellow: #FFFBE8;
+    /* employment */
+    --green: #8FD1C4;
+    /* rgb(143, 209, 196) */
+    --light-green: #F4FAF9;
+    /* leadership */
+    --orange: #F37735;
+    /* rgb(243, 119, 53) */
+    --light-orange: #FEF1EA;
+    --bubble-blue: #F3F8FA;
+    --secondary-blue: #bce4db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active, a:focus {
+    color: var(--font-purple);
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-purple);
+    padding: 0.5rem 0;
+    font-weight: 400;
+}
+
+p {
+    color: var(--font);
+}
+
+section {
+    align-items: top;
+    justify-content: left;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: var(--font-purple);
+    border: none;
+    padding: 1rem;
+    font-weight: 800;
+    margin: 1rem auto 2rem auto;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.partners img {
+    height: 100px;
+    margin: 2rem;
+}
+
+.partners h1 {
+    font-size: 1.5rem;
+}
+
+#committee {
+    text-align: left;
+    justify-content: left;
+    width: 80%;
+}
+
+#committee-members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::selection {
+    background: var(--font-purple);
+    color: #fff;
+}
+
+#coming-soon {
+    width: 12rem;
+    margin: 1rem;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: var(--light-purple);
+    border-radius: 2rem;
+}

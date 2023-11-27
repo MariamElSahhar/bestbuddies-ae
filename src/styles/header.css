@@ -1,0 +1,21 @@
+
+.page-header {
+    /* background: rgb(147,150,203); */
+    /* background: radial-gradient(circle, rgba(147,150,203,1) 70%, rgba(123,181,170,1) 80%, rgba(199,166,27,1) 90%, rgba(198,98,44,1) 100%); */
+    background-color: var(--light-purple);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 125px;
+    margin-top: 115px;
+    overflow: hidden;
+}
+
+.header-text {
+    font-weight: 50;
+    text-transform: capitalize;
+    color: #fff;
+}

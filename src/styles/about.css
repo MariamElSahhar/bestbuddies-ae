@@ -1,0 +1,94 @@
+#about-page .section-header {
+    text-align: left;
+    justify-content: left;
+}
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-page .two-col {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#about-page .two-col .col {
+    width: 50%;
+    margin: 2rem 0 0 0;
+}
+
+#pillars {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#pillars-wrapper {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    /* flex-grow: 1; */
+    width: 30%;
+    /* height: 80%; */
+    margin: 2rem .75rem 2rem;
+    /* width: 1rem; */
+}
+.pillar div {
+    width: 100%;
+    height: 100%;
+}
+
+.pillar h3 {
+    background-color: #fff;
+    font-weight: 400;
+}
+
+#friendship-pillar {
+    background: rgb(255,212,32);
+    background: linear-gradient(180deg, rgba(255,212,32,1) 0%, rgba(255,212,32,0) 100%);
+}
+
+#employment-pillar {
+    background: rgb(255,212,32);
+    background: linear-gradient(180deg, rgb(143, 209, 196, 1) 0%, rgb(143, 209, 196, 0) 100%);
+}
+
+#leadership-pillar {
+    background: rgb(243, 119, 53);
+    background: linear-gradient(180deg, rgb(243, 119, 53, 1) 0%, rgb(243, 119, 53, 0) 100%);
+}
+
+#mission, #vision, #serve {
+    margin: 2rem 0 2rem;
+}
+
+@media (max-width:1000px){
+    #about-page .pillar {
+        margin: 2rem .5rem 2rem;
+        height: 80%;
+        width: 30%;
+    }
+    #about-page .two-col {
+        flex-direction: column;
+    }
+    #about-page  .two-col .col {
+        width: 100%;
+    }
+    #about-page .two-col section {
+        width: 100%;
+    }
+    #about-page #pillars {
+        height: 30vh;
+    }
+}
