@@ -17,7 +17,7 @@ const pageLinks = [
             {name: "Leadership", address: "/leadership"}
         ]
     },
-    {name: "Get Involved", address: "/get-involved", menu: true, subPages:
+    {name: "Get Involved", address: "/get-involved", menu: false, subPages:
         [
             {name: "Start a Chapter", address: "/start-a-chapter"},
             {name: "Become a Buddy", address: "/become-a-buddy"},
@@ -26,16 +26,16 @@ const pageLinks = [
             {name: "Attend an Event", address: "/events"},
         ]
     },
-    {name: "Media", address: "/media", menu: false},
+    // {name: "Media", address: "/media", menu: false},
     // {name: "Contact Us", address: "/contact-us", menu: false},
-    {name: "Donate", address: "/donate", menu: false},
+    // {name: "Donate", address: "/donate", menu: false},
 ]
 
 function Navbar () {
     return (
         <nav>
             <div className="navbar-top">
-                <LanguageToggle />
+                {/* <LanguageToggle /> */}
                 <button><a href="https://www.bestbuddies.org/"><i className="fa-solid fa-globe"></i></a></button>
             </div>
             <div className="navbar-bottom">

@@ -8,6 +8,7 @@ function Involved () {
         <div>
             <Navbar />
             <Header page="Get Involved" />
+                <h2>We're launching soon! Check in again later for more information.</h2>
             <Footer />
         </div>
     );

@@ -17,9 +17,9 @@ function Footer () {
                 <div className="quicklinks col">
                     <h3>Quick Links</h3>
                     <ul className="quicklinks-links">
-                        <li><Link to="/faq">Frequently Asked Questions</Link></li>
+                        {/* <li><Link to="/faq">Frequently Asked Questions</Link></li> */}
                         <li><Link to="/programs">Join a Program</Link></li>
-                        <li><Link to="/donate">Make a Donation</Link></li>
+                        {/* <li><Link to="/donate">Make a Donation</Link></li> */}
                         <li><a href="https://www.bestbuddies.org/">International Website</a></li>
                     </ul>
                 </div>
@@ -28,10 +28,10 @@ function Footer () {
                     <ul className="social-links">
                         <li><i className="fa-solid fa-phone"></i> +971 2 444 1267</li>
                         <li><i className="fa-regular fa-envelope"></i> hello@bestbuddies.ae</li>
-                        <li><i className="fa-brands fa-instagram"></i> Instagram</li>
-                        <li><i className="fa-brands fa-facebook-f"></i> Facebook</li>
+                        {/* <li><i className="fa-brands fa-instagram"></i> Instagram</li>
+                        <li><i className="fa-brands fa-facebook-f"></i> Facebook</li> */}
                     </ul>
-                    <Newsletter />
+                    {/* <Newsletter /> */}
                 </div>
             </div>
             <div className="copyright">
