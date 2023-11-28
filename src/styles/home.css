@@ -62,86 +62,6 @@
     background: rgb(54,45,7);
     background: linear-gradient(137deg, rgba(54,45,7,.7) 25%, rgba(26,37,35,.7) 50%, rgba(40,20,9,.7) 75%, rgba(49,50,68,.7) 100%);
 }
-/* PROGRAM OVERVIEW */
-.program h2 {
-    color: #333;
-    font-weight: 500;
-    padding-bottom: 0.7rem;
-}
-
-.program-friendships h2 {
-    background-color: var(--yellow);
-}
-
-.program-employment h2 {
-    background-color: var(--green);
-}
-
-.program-leadership h2 {
-    color: #222;
-    background-color: var(--orange);
-}
-
-.program p {
-    color: var(--font);
-    padding: 1rem;
-}
-
-.program img {
-    width: 100%;
-}
-
-.section-item {
-    margin-top: 1rem;
-    border-radius: 5px;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.program-friendships {
-    background-color: var(--light-yellow);
-    border-top: 10px solid var(--yellow);
-    border-bottom: 10px solid var(--yellow);
-}
-
-.program button {
-    border: none;
-    padding: 1rem;
-    margin: 1rem auto 2rem auto;
-    font-size: 1.2rem;
-    border-radius: 4px;
-}
-
-.program a {
-    /* font-weight: 450; */
-    color: #222;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.program-friendships button {
-    background-color: var(--yellow);
-}
-
-.program-employment button {
-    background-color: var(--green);
-}
-
-.program-leadership button {
-    background-color: var(--orange);
-}
-
-.program-employment {
-    background-color: var(--light-green);
-    border-top: 10px solid var(--green);
-    border-bottom: 10px solid var(--green);
-}
-
-.program-leadership {
-    background-color: var(--light-orange);
-    border-top: 10px solid var(--orange);
-    border-bottom: 10px solid var(--orange);
-}
 
 /* JOIN */
 .home section {
@@ -174,8 +94,9 @@
 }
 
 .section-item {
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 0rem 5% 0rem 5%;
     justify-content: center;
+    border-radius: 5px;
     align-items: center;
 }
 
@@ -207,11 +128,6 @@
     align-items: center;
 }
 
-@media (min-width:850px) and (max-width: 1200px) {
-    .program h2 {
-        font-size: 1.2rem;
-    }
-}
 @media (max-width:850px) {
     .banner {
         height: 40vh;
@@ -226,19 +142,15 @@
         flex-direction: column;
         align-items: center;
     }
-    .program {
-        display: flex;
-        justify-content: center;
-    }
     .section-item {
-        max-width: 60%;
+        max-width: 90%;
         margin-top: 2rem;
         justify-content: center;
     }
     .section-item p {
-        /* max-height: 20%; */
-        /* height: 40vh; */
-        /* width: auto; */
+        font-size: 1.1rem;
+    }
+    .section-item h2 {
         font-size: 1.2rem;
     }
 }

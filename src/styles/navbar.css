@@ -16,7 +16,6 @@ nav {
     justify-content: right;
     padding-right: 6rem;
     padding-left: 6rem;
-
 }
 
 /* LANGUAGE SWITCH & GLOBAL WEBSITE LINK */
@@ -115,6 +114,14 @@ nav .logo-ill {
 .navbar-li{
   position: relative;
   display: inline-block;
+}
+
+.navbar-li a {
+  width: 100%;
+}
+
+.subpage-li a {
+  width: 100%;
 }
 
 .navbar-li .dropdown-menu {

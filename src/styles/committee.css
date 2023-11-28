@@ -33,3 +33,10 @@
     object-position: top;
     border-radius: 15px;
 }
+
+@media (max-width:790px){
+    #committee .member {
+        width: 150px;
+        height: 150px;
+    }
+}

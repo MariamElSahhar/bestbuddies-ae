@@ -7,7 +7,7 @@ import ComingSoon from '../../components/ComingSoon';
 
 function Leadership () {
     return (
-        <div id="leadership-page">
+        <div id="leadership-page" className='program-page'>
             <Navbar />
             <Header page="Leadership Development" />
             <section className='two-col'>

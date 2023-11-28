@@ -7,7 +7,7 @@ import ComingSoon from '../../components/ComingSoon';
 
 function Employment () {
     return (
-        <div id="employment-page">
+        <div id="employment-page" className='program-page'>
             <Navbar />
             <Header page="Employment and Workplace Integration" />
             <section className='two-col'>

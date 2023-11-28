@@ -7,7 +7,7 @@ import ComingSoon from '../../components/ComingSoon';
 
 function Friendship () {
     return (
-        <div id="friendship-page">
+        <div id="friendship-page" className='program-page'>
             <Navbar />
             <Header page="One-to-One Friendships" />
             <section className='two-col'>

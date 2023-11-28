@@ -4,8 +4,9 @@ import '../styles/footer.css';
 import Newsletter from './Newsletter'
 
 function Footer () {
+    const currentYear = new Date().getFullYear();
     return (
-        <footer>
+        <footer id='footer'>
             <div className="footer-top">
                 <div className="info col">
                     <img src="/assets/logos/BBUAE-logo-color-en.png" alt="best buddies english logo" className="logo-ill"></img>
@@ -35,7 +36,7 @@ function Footer () {
                 </div>
             </div>
             <div className="copyright">
-                <p>[© Copyright Statement placeholder]</p>
+                <p>© {currentYear} Best Buddies UAE. All Rights Reserved.</p>
             </div>
         </footer>
     );

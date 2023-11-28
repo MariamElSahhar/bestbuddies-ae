@@ -1,0 +1,9 @@
+#get-involved-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#get-involved-content h2 {
+    margin: 2rem;
+}

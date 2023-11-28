@@ -11,7 +11,6 @@ function Programs () {
             <Navbar />
             <Header page="Programs" />
                 <ProgramsSection />
-
             <Footer />
         </div>
     );
