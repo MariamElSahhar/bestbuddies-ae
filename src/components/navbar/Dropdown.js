@@ -10,7 +10,7 @@ function Dropdown({ page }) {
         <React.Fragment>
             <li className="navbar-li" key={page.address} id={page.address}>
                 <Link to={page.address}>{page.name}</Link>
-                <button class="hamburger-dropdown-button" onClick={handleToggle}><i class={"fa-solid " + (toggle ? "fa-caret-up" : "fa-caret-down")}></i></button>
+                <button className="hamburger-dropdown-button" onClick={handleToggle}><i className={"fa-solid " + (toggle ? "fa-caret-up" : "fa-caret-down")}></i></button>
             </li>
             {
                 toggle ?

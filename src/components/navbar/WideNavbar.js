@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 
-export default function WideNavbar({pageLinks}) {
+export default function WideNavbar({pages}) {
   return (
     <ul className='navbar-wide'>
         {
-        pageLinks.map((page) => (
+        pages.map((page) => (
             <li className="navbar-li" key={page.address} id={page.address}>
                 {
                     page.menu ?

@@ -191,9 +191,13 @@ nav .logo-ill {
     border-bottom: solid 1px #ccc;
 }
 #hamburger li {
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
+}
+#hamburger li a, #hamburger li button {
+    padding: 0.5rem 1rem;
 }
 #hamburger .dropdown-menu {
     display: block;
@@ -205,6 +209,14 @@ nav .logo-ill {
     border: none;
     color: var(--font-purple);
     font-size: 1.25rem;
+    display: flex;
+    width: 10%;
+    flex-direction: row-reverse;
+    padding: 0 2rem 0;
+    /* z-index: 3;
+    height: 2rem;
+    width: 2rem; */
+
 }
 
 #hamburger .subpage-li {
