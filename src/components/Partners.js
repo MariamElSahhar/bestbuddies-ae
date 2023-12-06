@@ -3,10 +3,10 @@ import '../styles/common.css'
 
 const Partners = () => {
   return (
-    <div className='partners'>
+    <section className='partners'>
         <h1>Supported By</h1>
         <img src='/assets/logos/maan-logo.png' alt="ma'an logo"></img>
-    </div>
+    </section>
   )
 }
 

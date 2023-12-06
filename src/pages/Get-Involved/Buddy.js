@@ -1,15 +1,10 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Page from '../../components/Page';
 
 const Buddy = () => {
   return (
-    <div>
-        <Navbar />
-        <Header page="Become a Buddy"/>
-        <Footer />
-    </div>
+    <Page page="Become a Buddy" id="buddy-page" className="involved-page">
+    </Page>
   )
 }
 

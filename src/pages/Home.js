@@ -1,16 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
 import '../styles/common.css';
 import '../styles/home.css';
-import Navbar from '../components/Navbar';
+import Page from "../components/Page";
 import Partners from '../components/Partners'
-import Footer from '../components/Footer';
 import ProgramsSection from "../components/ProgramsSection";
 
 
 function Home () {
     return (
-        <div className="home">
-            <Navbar />
+        <Page id="home-page" home="true" page="Home">
             <header className='home-header'>
                 <div className="banner">
                     <img src="/assets/images/main-header.jpeg" alt="banner"></img>
@@ -45,8 +43,7 @@ function Home () {
                 <article></article>
             </section> */}
             <Partners />
-            <Footer />
-        </div>
+        </Page>
     );
 }
 

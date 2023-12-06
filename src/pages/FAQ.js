@@ -1,15 +1,10 @@
 import '../styles/common.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Page from '../components/Page';
 
 function FAQ () {
     return (
-        <div>
-            <Navbar />
-            <Header page="Frequently Asked Questions" />
-            <Footer />
-        </div>
+        <Page page="Frequently Asked Questions" id='faq-page'>
+        </Page>
     );
 }
 

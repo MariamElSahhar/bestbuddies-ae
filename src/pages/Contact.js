@@ -1,15 +1,10 @@
 import '../styles/common.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Page from '../components/Page';
 
 function Contact () {
     return (
-        <div>
-            <Navbar />
-            <Header page="Contact Us" />
-            <Footer />
-        </div>
+        <Page page="Contact Us" id="contact-page">
+        </Page>
     );
 }
 

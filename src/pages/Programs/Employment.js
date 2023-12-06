@@ -1,15 +1,11 @@
 import '../../styles/common.css';
 import '../../styles/programs.css';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Page from '../../components/Page';
 import ComingSoon from '../../components/ComingSoon';
 
 function Employment () {
     return (
-        <div id="employment-page" className='program-page'>
-            <Navbar />
-            <Header page="Employment and Workplace Integration" />
+        <Page id="employment-page" className='program-page' page="Employment and Workplace Integration">
             <section className='two-col'>
                 <div className='col'>
                     < ComingSoon />
@@ -19,8 +15,7 @@ function Employment () {
                 </div>
                 <iframe className="col" width="555" height="312" src="https://www.youtube.com/embed/VMCMLezro-A" title="Best Buddies: Integrated Employment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
             </section>
-            <Footer />
-        </div>
+        </Page>
     );
 }
 

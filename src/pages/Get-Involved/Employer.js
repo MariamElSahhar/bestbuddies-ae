@@ -1,15 +1,10 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Page from '../../components/Page';
 
 const Employer = () => {
   return (
-    <div>
-        <Navbar />
-        <Header page="Become an Employer"/>
-        <Footer />
-    </div>
+    <Page page="Become an Employer" id="employer-page" className="involved-page">
+    </Page>
   )
 }
 

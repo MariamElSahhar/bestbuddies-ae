@@ -2,18 +2,13 @@ import '../styles/common.css';
 import '../styles/about.css';
 import { Outlet, Link } from "react-router-dom";
 
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Page from '../components/Page';
 import Partners from '../components/Partners';
 import Committee from '../components/Committee'
-import ProgramsSection from '../components/ProgramsSection';
 
 function About () {
     return (
-        <div id="about-page">
-            <Navbar />
-            <Header page="About" />
+        <Page id="about-page" page="About">
             <div className="about-page-content">
                 <div className="two-col">
                     <div className="col">
@@ -56,13 +51,10 @@ function About () {
                     <p>Founded in 1989 by Anthony K. Shriver, Best Buddies is a vibrant organization that has grown from one original chapter to nearly 3,000 chapters worldwide, positively impacting the lives of over 1.3 million people with and without IDD. Best Buddies programs engage participants in each of the 50 states and in 49 countries around the world.</p>
                     <p><a href="https://www.bestbuddies.org/">Learn More <i className="fa-solid fa-globe"></i></a></p>
                 </section>
-                <Committee />
-                <section>
-                    <Partners />
-                </section>
+                {/* <Committee /> */}
+                <Partners />
             </div>
-            <Footer/>
-        </div> 
+        </Page>
     );
 }
 

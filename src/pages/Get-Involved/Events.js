@@ -1,14 +1,10 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Page from '../../components/Page';
+
 const Event = () => {
   return (
-    <div>
-        <Navbar />
-        <Header page="Attend an Event"/>
-        <Footer />
-    </div>
+    <Page id="event-page" page="Attend an Event" className='involved-page'>
+    </Page>
   )
 }
 

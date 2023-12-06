@@ -1,15 +1,10 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Page from '../../components/Page';
 
 const Mentor = () => {
   return (
-    <div>
-        <Navbar />
-        <Header page="Become a Mentor"/>
-        <Footer />
-    </div>
+    <Page id="mentor-page" page="Become a Mentor" className="involved-page">
+    </Page>
   )
 }
 

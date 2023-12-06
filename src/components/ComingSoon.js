@@ -4,7 +4,7 @@ import '../styles/common.css'
 const ComingSoon = () => {
   return (
     <div id="coming-soon">
-      <p>Launching soon!</p>
+      <p>Launching in 2024</p>
     </div>
   )
 }

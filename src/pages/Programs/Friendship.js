@@ -1,15 +1,11 @@
 import '../../styles/common.css';
-import '../../styles/programs.css'
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import '../../styles/programs.css';
+import Page from '../../components/Page';
 import ComingSoon from '../../components/ComingSoon';
 
 function Friendship () {
     return (
-        <div id="friendship-page" className='program-page'>
-            <Navbar />
-            <Header page="One-to-One Friendships" />
+        <Page id="friendship-page" className='program-page'  page="One-to-One Friendships">
             <section className='two-col'>
                 <div className='col'>
                     < ComingSoon />
@@ -18,8 +14,7 @@ function Friendship () {
                 </div>
                 <iframe className='col' width="555" height="312" src="https://www.youtube.com/embed/4x3n95uu9qA" title="Best Buddies: One-To-One Friendships" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
             </section>
-            <Footer />
-        </div>
+        </Page>
     );
 }
 

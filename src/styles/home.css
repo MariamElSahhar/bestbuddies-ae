@@ -144,7 +144,7 @@
     }
     .section-item {
         max-width: 90%;
-        margin-top: 2rem;
+        margin: 2rem 0 0 0;
         justify-content: center;
     }
     .section-item p {

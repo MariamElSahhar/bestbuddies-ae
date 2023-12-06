@@ -1,15 +1,11 @@
 import '../../styles/common.css';
-import '../../styles/programs.css'
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import '../../styles/programs.css';
+import Page from '../../components/Page';
 import ComingSoon from '../../components/ComingSoon';
 
 function Leadership () {
     return (
-        <div id="leadership-page" className='program-page'>
-            <Navbar />
-            <Header page="Leadership Development" />
+        <Page id="leadership-page" className='program-page' page="Leadership Development">
             <section className='two-col'>
                 <div className='col'>
                     <ComingSoon/>
@@ -18,8 +14,7 @@ function Leadership () {
                 </div>
                 <iframe className='col' width="555" height="312" src="https://www.youtube.com/embed/gVuCYJ7XRNE" title="Best Buddies International - Unlocking Potential" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
             </section>
-            <Footer />
-        </div>
+        </Page>
     );
 }
 

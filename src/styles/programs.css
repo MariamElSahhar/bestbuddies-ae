@@ -6,7 +6,7 @@
     width: 90%;
 }
 
-/* Employment, Leadership, Friendship */
+/* Employment, Leadership, Friendship  */
 .program-page .two-col {
     display: flex;
     justify-content: space-between;
@@ -134,5 +134,9 @@
     #programs .program {
         display: flex;
         justify-content: center;
+    }
+
+    #programs .section-item {
+        margin: 2rem 0 0 0;
     }
 }

@@ -1,15 +1,13 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Page
+ from '../../components/Page';
 const Chapter = () => {
   return (
-    <div>
-        <Navbar />
-        <Header page="Join a Chapter"/>
-        <Footer />
-    </div>
+    <Page id="chapter-page" page="Join a Chapter" className='involved-page'>
+    </Page>
   )
 }
 
 export default Chapter
+
+
