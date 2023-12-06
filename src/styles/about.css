@@ -79,7 +79,7 @@
         height: 80%;
         width: 30%;
     }
-    #about-page h1 {
+    #about-page .about-page-content h1 {
         font-size: 1.25rem;
     }
     #pillars-wrapper h2 {
