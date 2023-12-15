@@ -28,7 +28,7 @@ const pageLinks = [
         ]
     },
     // {name: "Media", address: "/media", menu: false},
-    // {name: "Contact Us", address: "/contact-us", menu: false},
+    {name: "Contact Us", address: "/contact-us", menu: false},
     // {name: "Donate", address: "/donate", menu: false},
 ]
 
