@@ -5,18 +5,20 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $name = htmlspecialchars( $_POST['name'] );
+        $first_name = htmlspecialchars( $_POST['first_name'] );
+        $last_name = htmlspecialchars( $_POST['last_name'] );
         $email = htmlspecialchars( $_POST['email'] );
         $number = htmlspecialchars( $_POST['number'] );
         $message = htmlspecialchars( $_POST['message'] );
         
         $to = "hello@bestbuddies.ae";
-        $subject = "Website Form Submission From ".$name;
+        $subject = "Website Form Submission From ".$first_name." ".$last_name;
         $body = "
-            Name: $name\n
+            From: $first_name $last_name\n
             Phone Number: $number\n
             Email: $email\n
-            Message: $message";
+            Message: \n
+            $message";
         
         mail($to, $subject, $body);
 

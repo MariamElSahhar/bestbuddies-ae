@@ -19,7 +19,8 @@ const ContactForm = ({updateSubmission}) => {
     return (
         <form onSubmit={handleSubmit} id="contact-form">
             <div>
-                <InputField name="name" label='Full Name' type="text"/>
+                <InputField name="first_name" label='First Name' type="text"/>
+                <InputField name="last_name" label='Last Name' type="text"/>
                 <InputField name="email" label='Email Address' type="text"/>
                 <InputField name="number" label='Phone Number' type="text"/>
             </div>

@@ -24,4 +24,3 @@ yarn-error.log*
 
 #ignore
 public/assets/committee/
-backend/sql.sql
