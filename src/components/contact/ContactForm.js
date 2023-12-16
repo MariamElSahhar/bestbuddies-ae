@@ -1,19 +1,22 @@
-import React from 'react'
+import {React , useState} from 'react'
 import InputField from './InputField'
 
-const handleSubmit = async (event) => {
-    event.preventDefault();
+const ContactForm = ({updateSubmission}) => {
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-    const formData = new FormData(event.target);
+        const formData = new FormData(event.target);
 
-    await fetch('https://bestbuddies.ae/contact.php', {
-        method: 'POST',
-        body: formData,
-  });
-}
+        await fetch('https://bestbuddies.ae/inquiry.php', {
+            method: 'POST',
+            body: formData,
+        });
 
-const ContactForm = () => {
-  return (
+        updateSubmission(true);
+        console.log('updated');
+    }
+
+    return (
         <form onSubmit={handleSubmit} id="contact-form">
             <div>
                 <InputField name="name" label='Full Name' type="text"/>
