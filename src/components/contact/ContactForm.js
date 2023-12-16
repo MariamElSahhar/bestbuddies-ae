@@ -7,7 +7,7 @@ const ContactForm = ({updateSubmission}) => {
 
         const formData = new FormData(event.target);
 
-        await fetch('https://bestbuddies.ae/inquiry.php', {
+        await fetch('https://bestbuddies.ae/backend/inquiry.php', {
             method: 'POST',
             body: formData,
         });
