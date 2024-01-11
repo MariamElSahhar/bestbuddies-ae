@@ -5,6 +5,12 @@ nav {
     width: 100%;
     z-index: 100;
     top: 0;
+
+    .logo-ill {
+        transform: translateY(0%);
+        margin-bottom: 2rem;
+        height: 6rem;
+    }
 }
 
 /* NAVBAR TOP */
@@ -16,27 +22,31 @@ nav {
     justify-content: right;
     padding-right: 6rem;
     padding-left: 6rem;
+
+    button {
+        border: none;
+        cursor: pointer;
+        color: var(--font-purple) !important; 
+        font-weight: 500;
+        font-size: 20px;
+        background: none;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        text-decoration: none;
+        height: 100%;
+        width: auto;
+        font-size: 1rem;
+    }
+
+    a {
+        color: var(--font-purple);
+    }
+
+    button:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
-/* LANGUAGE SWITCH & GLOBAL WEBSITE LINK */
-.navbar-top button {
-    border: none;
-    cursor: pointer;
-    color: var(--font-purple);
-    font-weight: 500;
-    font-size: 20px;
-    background-color: var(--background-purple);
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    text-decoration: none;
-    height: 100%;
-    width: auto;
-    font-size: 1rem;
-}
-
-.navbar-top button:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
 
 /* NAVBAR BOTTOM */
 
@@ -48,95 +58,72 @@ nav {
     height: 75px;
     padding-right: 6rem;
     padding-left: 6rem;
+
+    ul {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        height: 100%;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    a {
+        color: var(--font-purple);
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .navbar-li:hover {
+        box-shadow: inset 0px -2px 0px 0px var(--font-purple);
+        cursor: pointer;
+    }
+
+    .selected {
+        box-shadow: inset 0px -2px 0px 0px var(--font-purple);
+        cursor: default;
+    }
+
+    li[id="/donate"] {
+        background-color: var(--font-purple);
+        margin: 0;
+        cursor: pointer;
+
+        a {
+            color: #fff;
+        }
+    }
 }
 
-.navbar-bottom ul {
-    display: flex;
-    justify-content: right;
-    list-style-type: none;
-    height: 100%;
-}
 
-.navbar-bottom li {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-}
-
-.navbar-bottom a {
-    color: var(--font-purple);
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.navbar-bottom .navbar-li:hover {
-    box-shadow: inset 0px -2px 0px 0px var(--font-purple);
-    cursor: pointer;
-}
-
-li[id="/donate"] {
-    background-color: var(--font-purple);
-}
-
-li[id="/donate"] a {
-    color: #fff;
-}
-
-/* LOGO */
-
-nav .logo-ill {
-    transform: translateY(0%);
-    margin-bottom: 2rem;
-    height: 6rem;
-}
-
-.donate { 
-    background-color: var(--font-purple);
-    margin: 0;
-    cursor: pointer;
-}
-
-.donate a {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 100;
-}
-
-.donate:hover {
-    background-color: var(--light-purple);
-}
-
-.navbar-bottom .selected {
-    box-shadow: inset 0px -2px 0px 0px var(--font-purple);
-    cursor: default;
-}
-
+/* DROPDOWN */
 .navbar-li{
   position: relative;
   display: inline-block;
+
+  a {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+    height: fit-content;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
-.navbar-li a {
-  width: 100%;
-}
-
-.subpage-li a {
-  width: 100%;
-}
-
-.navbar-li .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  width: 100%;
-  text-align: left;
-  z-index: 1;
-  height: fit-content;
-  border: 1px solid #ccc;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
 
 /* Show dropdown on hover */
 .navbar-li:hover .dropdown-menu {
@@ -164,64 +151,68 @@ nav .logo-ill {
 
 /* HAMBURGER */
 
-.fa-bars {
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--font-purple)
-}
-
 #hamburger {
     display: none;
+
+    .hide {
+        display: none !important;
+    }
+
+    .subpage-li a {
+        width: 100%;
+    }
+    
+    .fa-bars {
+        cursor: pointer;
+        font-size: 2rem;
+        color: var(--font-purple)
+    }
+
+    #hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        align-items: left;
+        top: 100%;
+        left: 0;
+        height: fit-content;
+        background-color: #fff;
+        border-bottom: solid 1px #ccc;
+    }
+
+    li {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        a, button {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    .dropdown-menu {
+        display: block;
+        z-index: 0;
+    }
+
+    .subpage-li {
+        padding-left: 4rem;
+    }
+
+    .hamburger-dropdown-button {
+        background-color: white;
+        border: none;
+        color: var(--font-purple);
+        font-size: 1.25rem;
+        display: flex;
+        width: 10%;
+        flex-direction: row-reverse;
+        padding: 0 2rem 0;
+    }
 }
 
-#hamburger .hide {
-    display: none;
-}
-
-#hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100vw;
-    align-items: left;
-    top: 100%;
-    left: 0;
-    height: fit-content;
-    background-color: #fff;
-    border-bottom: solid 1px #ccc;
-}
-#hamburger li {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-#hamburger li a, #hamburger li button {
-    padding: 0.5rem 1rem;
-}
-#hamburger .dropdown-menu {
-    display: block;
-    z-index: 0;
-}
-
-.hamburger-dropdown-button {
-    background-color: white;
-    border: none;
-    color: var(--font-purple);
-    font-size: 1.25rem;
-    display: flex;
-    width: 10%;
-    flex-direction: row-reverse;
-    padding: 0 2rem 0;
-    /* z-index: 3;
-    height: 2rem;
-    width: 2rem; */
-
-}
-
-#hamburger .subpage-li {
-    padding-left: 4rem;
-}
 
 @media (max-width:1000px){
     .navbar-bottom, .navbar-top {

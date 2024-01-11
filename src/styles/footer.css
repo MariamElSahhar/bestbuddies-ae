@@ -42,9 +42,20 @@ footer .logo-ill {
     margin: .5rem auto .5rem;
 }
 
-.quicklinks-links li:hover, .social-links li:hover {
+.quicklinks-links li:hover {
     text-decoration: underline;
     cursor: pointer; 
+}
+
+.social-links li:hover {
+    cursor: pointer; 
+}
+
+.social-links li:hover .underline {
+    text-decoration: underline;
+}
+.social-links a {
+    text-decoration: none;
 }
 
 .footer-top .col {

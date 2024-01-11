@@ -19,8 +19,8 @@ function Contact () {
             <div id="contact-page-content">
                 {
                     submission ?
-                    <div> 
-                        <h1>Thanks, we'll get back to you soon!</h1>
+                    <div id="thanks"> 
+                        <h1>Thanks for your message! We'll get back to you soon.</h1>
                         <button onClick={handleNewSubmission}>Send another message</button>
                     </div>
                     :

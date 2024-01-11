@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
 import '../styles/footer.css';
-import Newsletter from './Newsletter'
+import Newsletter from './newsletter/Newsletter'
 
 function Footer () {
     const currentYear = new Date().getFullYear();
@@ -27,8 +27,8 @@ function Footer () {
                 <div className="socials col">
                     <h3>Contact Us</h3>
                     <ul className="social-links">
-                        <li><i className="fa-solid fa-phone"></i> +971 2 444 1267</li>
-                        <li><i className="fa-regular fa-envelope"></i> hello@bestbuddies.ae</li>
+                        <li><i className="fa-solid fa-phone"></i> <span className='underline'>+971 2 444 1267</span></li>
+                        <li><a href='mailto:hello@bestbuddies.ae'><i className="fa-regular fa-envelope"></i> <span className='underline'>hello@bestbuddies.ae</span></a></li>
                         {/* <li><i className="fa-brands fa-instagram"></i> Instagram</li>
                         <li><i className="fa-brands fa-facebook-f"></i> Facebook</li> */}
                     </ul>

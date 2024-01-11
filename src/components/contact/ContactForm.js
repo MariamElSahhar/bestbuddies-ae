@@ -5,15 +5,14 @@ const ContactForm = ({updateSubmission}) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const formData = new FormData(event.target);
+        // const formData = new FormData(event.target);
 
-        await fetch('https://bestbuddies.ae/backend/inquiry.php', {
-            method: 'POST',
-            body: formData,
-        });
+        // await fetch('https://bestbuddies.ae/backend/inquiry.php', {
+        //     method: 'POST',
+        //     body: formData,
+        // });
 
         updateSubmission(true);
-        console.log('updated');
     }
 
     return (
