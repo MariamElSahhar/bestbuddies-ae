@@ -101,52 +101,45 @@ nav {
 
 
 /* DROPDOWN */
-.navbar-li{
-  position: relative;
-  display: inline-block;
+.navbar-bottom .navbar-li{
+    position: relative;
+    display: inline-block;
 
-  a {
-    width: 100%;
-  }
+    a {
+        width: 100%;
+    }
 
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    text-align: left;
-    z-index: 1;
-    height: fit-content;
-    border: 1px solid #ccc;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-}
+    .dropdown-wrapper {
+        width: fit-content;
+    }
 
+    &:hover .dropdown-menu {
+        display: block;
+    }
 
-/* Show dropdown on hover */
-.navbar-li:hover .dropdown-menu {
-  display: block;
-}
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: left;
+        z-index: 1;
+        height: fit-content;
+        border: 1px solid #ccc;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
 
-.navbar-bottom .navbar-li .dropdown-item {
-    padding: 1rem;
-}
-
-.dropdown-item {
-    display: block;
-    margin: 0;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.dropdown-item:hover {
-    background-color: var(--background-purple);
-}
-
-.dropdown-wrapper {
-    width: fit-content;
+    .dropdown-item {
+        display: block;
+        margin: 0;
+        padding: 1rem;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--background-purple);
+        }
+    }
 }
 
 /* HAMBURGER */
@@ -158,8 +151,11 @@ nav {
         display: none !important;
     }
 
-    .subpage-li a {
-        width: 100%;
+    .subpage-li {
+        padding-left: 4rem;
+        a {
+            width: 100%;
+        }
     }
     
     .fa-bars {
@@ -195,10 +191,6 @@ nav {
     .dropdown-menu {
         display: block;
         z-index: 0;
-    }
-
-    .subpage-li {
-        padding-left: 4rem;
     }
 
     .hamburger-dropdown-button {

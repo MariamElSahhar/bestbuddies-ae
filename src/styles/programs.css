@@ -7,111 +7,105 @@
 }
 
 /* Employment, Leadership, Friendship  */
-.program-page .two-col {
-    display: flex;
-    justify-content: space-between;
-}
+.program-page {
+    .two-col {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .col {
+        margin: 5%;
+        width: 50%;
+    }
 
-.program-page .col {
-    margin: 5%;
-    width: 50%;
-}
+    &#leadership-page #coming-soon {
+        background-color: var(--orange);
+    }
 
-#leadership-page #coming-soon {
-    background-color: var(--orange);
-}
+    &#employment-page #coming-soon {
+        background-color: var(--green);
+    }
 
-#employment-page #coming-soon {
-    background-color: var(--green);
-}
-
-#friendship-page #coming-soon {
-    background-color: var(--yellow);
+    &#friendship-page #coming-soon {
+        background-color: var(--yellow);
+    }
 }
 
 
 /* Program Cards */
-.program h2 {
-    color: #333;
-    font-weight: 500;
-    padding-bottom: 0.7rem;
+#programs .program {
+    a {
+        color: #222;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        margin: 1rem auto 2rem auto;
+        font-size: 1.2rem;
+        border-radius: 4px;
+    }
+    img {
+        width: 100%;
+    }
+    h2 {
+        color: #333;
+        font-weight: 500;
+        padding-bottom: 0.7rem;
+    }
+    .section-item {
+        margin: 0rem 5% 0rem 5%;
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
+    }
+    p {
+        color: var(--font);
+        padding: 1rem;
+    }
+
+    .program-friendships {
+        background-color: var(--light-yellow);
+        border-top: 10px solid var(--yellow);
+        border-bottom: 10px solid var(--yellow);
+        h2 {
+            background-color: var(--yellow);
+        }
+        button {
+            background-color: var(--yellow);
+        }
+    }
+
+    .program-employment {
+        background-color: var(--light-green);
+        border-top: 10px solid var(--green);
+        border-bottom: 10px solid var(--green);
+        button {
+            background-color: var(--green);
+        }
+        h2 {
+            background-color: var(--green);
+        }
+    }
+
+    .program-leadership {
+        background-color: var(--light-orange);
+        border-top: 10px solid var(--orange);
+        border-bottom: 10px solid var(--orange);
+        h2 {
+            color: #222;
+            background-color: var(--orange);
+        }
+        button {
+            background-color: var(--orange);
+        }
+    }
+
 }
 
-.program-friendships h2 {
-    background-color: var(--yellow);
-}
 
-.program-employment h2 {
-    background-color: var(--green);
-}
-
-.program-leadership h2 {
-    color: #222;
-    background-color: var(--orange);
-}
-
-.program p {
-    color: var(--font);
-    padding: 1rem;
-}
-
-.program img {
-    width: 100%;
-}
-
-
-.program-friendships {
-    background-color: var(--light-yellow);
-    border-top: 10px solid var(--yellow);
-    border-bottom: 10px solid var(--yellow);
-}
-
-.program button {
-    border: none;
-    padding: 1rem;
-    margin: 1rem auto 2rem auto;
-    font-size: 1.2rem;
-    border-radius: 4px;
-}
-
-.program a {
-    color: #222;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#programs .section-item {
-    margin: 0rem 5% 0rem 5%;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: center;
-}
-
-.program-friendships button {
-    background-color: var(--yellow);
-}
-
-.program-employment button {
-    background-color: var(--green);
-}
-
-.program-leadership button {
-    background-color: var(--orange);
-}
-
-.program-employment {
-    background-color: var(--light-green);
-    border-top: 10px solid var(--green);
-    border-bottom: 10px solid var(--green);
-}
-
-.program-leadership {
-    background-color: var(--light-orange);
-    border-top: 10px solid var(--orange);
-    border-bottom: 10px solid var(--orange);
-}
-
-/* Program Pages */
+/* Program Sub-Pages */
 @media (max-width:790px){
     .program-page .two-col {
         flex-direction: column;

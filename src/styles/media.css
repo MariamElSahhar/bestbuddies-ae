@@ -1,8 +1,8 @@
 #media-page-content {
     display: flex;
     justify-content: center;
-}
 
-#media-page-content #coming-soon p{
-    color: #fff;
+    #coming-soon p{
+        color: #fff;
+    }
 }

@@ -31,16 +31,15 @@
 a {
     text-decoration: none;
     cursor: pointer;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &:active, &:focus {
+        color: var(--font-purple);
+    }
 }
 
-a:active, a:focus {
-    color: var(--font-purple);
-}
-
-a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
 
 ul {
     list-style: none;
