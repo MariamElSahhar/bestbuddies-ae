@@ -4,6 +4,18 @@
     text-align: center;
     align-items: center;
     width: 90%;
+    .section-content {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        text-align: center;
+        justify-items: center;
+        width: 90%;
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
 }
 
 /* Employment, Leadership, Friendship  */
@@ -69,10 +81,10 @@
         background-color: var(--light-yellow);
         border-top: 10px solid var(--yellow);
         border-bottom: 10px solid var(--yellow);
-        h2 {
+        button {
             background-color: var(--yellow);
         }
-        button {
+        h2 {
             background-color: var(--yellow);
         }
     }
@@ -93,15 +105,14 @@
         background-color: var(--light-orange);
         border-top: 10px solid var(--orange);
         border-bottom: 10px solid var(--orange);
+        button {
+            background-color: var(--orange);
+        }
         h2 {
             color: #222;
             background-color: var(--orange);
         }
-        button {
-            background-color: var(--orange);
-        }
     }
-
 }
 
 
