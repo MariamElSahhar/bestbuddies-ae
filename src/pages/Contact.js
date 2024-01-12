@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import '../styles/common.css';
 import '../styles/contact.css';
 import Page from '../components/Page';
@@ -8,7 +9,6 @@ function Contact () {
     const [submission, setSubmission] = useState(false);
 
     const updateSubmission = (submissionStatus) => {
-        console.log('set submission triggered');
         setSubmission(submissionStatus);
     };
 

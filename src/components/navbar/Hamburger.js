@@ -7,12 +7,12 @@ import Dropdown from './Dropdown';
 import '../../styles/navbar.css';
 
 const Hamburger = ({ pages }) => {
-  const [showMenu, menuState] = useState(false);
+  const [showMenu, setMenu] = useState(false);
   const ref = useRef(null);
-  useClickAway(ref, () => menuState(false));
+  useClickAway(ref, () => setMenu(false));
 
   const toggleMenu = () => {
-    menuState(!showMenu);
+    setMenu(!showMenu);
   };
 
   return (

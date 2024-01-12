@@ -38,6 +38,9 @@ a {
     &:active, &:focus {
         color: var(--font-purple);
     }
+    &:any-link {
+        color: var(--font-purple);
+    }
 }
 
 

@@ -151,3 +151,11 @@
         margin-top: 0;
     }
 }
+
+#home-page .banner::before {
+    width: 100%;
+}
+
+#home-page .banner img {
+    width: 100%;
+}
