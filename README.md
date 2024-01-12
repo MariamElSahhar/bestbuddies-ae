@@ -1,5 +1,7 @@
 # 💟 Best Buddies UAE Website
 
+Best Buddies UAE is a volunteer organization that creates opportunities for one-to-one friendships, integrated employment, and leadership development for People of Determination (people with intellectual and developmental disabilities).
+
 ## Tools Used
 - HTML, CSS, and React.js for front-end 🖌️
 - PHP and SQL for back-end (contact form and sign-up form) 💬
