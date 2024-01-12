@@ -35,8 +35,8 @@ const ContactForm = ({updateSubmission}) => {
                 <div>
                     <InputField name="first_name" label='First Name' type="text" required={firstnameRequired}/>
                     <InputField name="last_name" label='Last Name' type="text" required={lastnameRequired}/>
-                    <InputField name="email" label='Email Address' type="text" required={emailRequired}/>
-                    <InputField name="number" label='Phone Number' type="text" optional={true}/>
+                    <InputField name="email" label='Email Address' type="email" required={emailRequired}/>
+                    <InputField name="number" label='Phone Number' type="tel" optional={true}/>
                 </div>
                 <div id='message-col'>
                     <div className='input-field'>

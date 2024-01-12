@@ -66,14 +66,15 @@
         textarea {
             resize: none;
             height: 233px;
-    
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 1rem;
+            padding: 0.5rem;
             :focus {
                 outline-color: var(--font-purple);
             }
         }
         .empty-field {
             color: #91193d;
-            /* font-size: 0.75rem; */
         }
         .optional {
             color: #666;
