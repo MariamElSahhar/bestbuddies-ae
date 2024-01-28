@@ -16,7 +16,7 @@ function Dropdown({ page }) {
                 toggle ?
                 page.subPages.map((subPage) => (
                     <li className="dropdown-item subpage-li" key={subPage.address} id={subPage.address}>
-                        <Link to={subPage.address}>{subPage.name}</Link>
+                        <Link to={`${page.address}${subPage.address}`}>{subPage.name}</Link>
                     </li>
                 ))
                 : ''

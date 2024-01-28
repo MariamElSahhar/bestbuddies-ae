@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../../styles/navbar.css';
 import LanguageToggle from '../LanguageToggle'

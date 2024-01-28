@@ -15,7 +15,7 @@ export default function WideNavbar({pages}) {
                             <ul className="dropdown-menu">
                                 {page.subPages.map((subPage) => (
                                     <li className="dropdown-item" key={subPage.address} id={subPage.address}>
-                                        <Link to={subPage.address}>{subPage.name}</Link>
+                                        <Link to={`${page.address}${subPage.address}`}>{subPage.name}</Link>
                                     </li>
                                 ))}
                             </ul>
