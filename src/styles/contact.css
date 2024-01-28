@@ -63,6 +63,7 @@
         align-items: left;
         text-align: left;
         justify-content: left;
+        caret-color: var(--font-purple);
         textarea {
             resize: none;
             height: 233px;
