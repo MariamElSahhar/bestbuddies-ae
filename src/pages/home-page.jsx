@@ -11,7 +11,7 @@ export default function HomePage() {
 				<header className="home-header">
 					<div className="banner">
 						<img
-							src="/assets/images/main-header.jpeg"
+							src="./assets/images/main-header.jpeg"
 							alt="banner"
 						></img>
 						<div className="banner-text">
@@ -27,15 +27,15 @@ export default function HomePage() {
                 </div>
                 <div className="section-content">
                     <div className="participate section-item join-item">
-                        <img src="/assets/images/bb-donate-ca.jpg" alt=""></img>
+                        <img src="./assets/images/bb-donate-ca.jpg" alt=""></img>
                         <button>Start a Chapter</button>
                     </div>
                     <div className="join-donate section-item join-item">
-                        <img src="/assets/images/attend-an-event.webp" alt=""></img>
+                        <img src="./assets/images/attend-an-event.webp" alt=""></img>
                         <button>Become a Buddy</button>
                     </div>
                     <div className="attend section-item join-item">
-                        <img src="/assets/images/attend-an-event.webp" alt=""></img>
+                        <img src="./assets/images/attend-an-event.webp" alt=""></img>
                         <button>Attend an Event</button>
                     </div>
                 </div>

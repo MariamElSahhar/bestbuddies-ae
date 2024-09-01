@@ -64,12 +64,6 @@ nav {
 		height: 100%;
 	}
 
-	li {
-		display: flex;
-		align-items: center;
-		padding: 1.5rem;
-	}
-
 	a {
 		color: var(--font-purple);
 		text-decoration: none;
@@ -79,6 +73,10 @@ nav {
 	}
 
 	.navbar-li {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem;
+		position: relative;
 		&:has(a.active) {
 			box-shadow: inset 0px -2px 0px 0px var(--font-purple);
 		}
@@ -105,19 +103,12 @@ nav {
 }
 
 /* DROPDOWN */
-.navbar-bottom .navbar-li {
-	position: relative;
-	display: inline-block;
-
-	a {
-		width: 100%;
-	}
-
+.navbar-bottom  {
 	.dropdown-wrapper {
 		width: fit-content;
 	}
 
-	&:hover .dropdown-menu {
+	.navbar-li:hover .dropdown-menu {
 		display: block;
 	}
 
@@ -140,6 +131,9 @@ nav {
 		margin: 0;
 		padding: 1rem;
 		cursor: pointer;
+		a {
+			width: 100%;
+		}
 		&:has(a.active) {
 			background-color: var(--background-purple);
 		}

@@ -9,7 +9,7 @@ function Footer () {
         <footer id='footer'>
             <div className="footer-top">
                 <div className="info col">
-                    <img src="/assets/logos/BBUAE-logo-color-en.png" alt="best buddies english logo" className="logo-ill"></img>
+                    <img src="./assets/logos/BBUAE-logo-color-en.png" alt="best buddies english logo" id="footer-logo-ill"></img>
                     <h3>Best Buddies UAE</h3>
                     <p>Yas Creative Hub</p>
                     <p>Yas Island</p>

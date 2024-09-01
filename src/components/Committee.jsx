@@ -34,7 +34,7 @@ const Committee = () => {
             members.map((member) => (
               <div className="member" key={member.name}>
                 <img src= {
-                  member.photo ? member.photo : "/assets/committee/member.png"
+                  member.photo ? member.photo : "./assets/committee/member.png"
                 }
                 alt={member.name}></img>
                 <h3>{member.name}</h3>

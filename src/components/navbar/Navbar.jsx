@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-
 import "../../styles/navbar.css";
-// import LanguageToggle from "../LanguageToggle";
 import Hamburger from "./hamburger";
 import WideNavbar from "./wide-navbar";
 
@@ -58,12 +56,11 @@ function Navbar() {
 			<div className="navbar-bottom">
 				<Link to="/">
 					<img
-						src="/assets/logos/BBUAE-logo-color-en.png"
+						src="./assets/logos/BBUAE-logo-color-en.png"
 						alt="best buddies english logo"
 						className="logo-ill logo-top"
 					></img>
 				</Link>
-				{/* <img src="../images/intl-txt-logo-En.png" alt="best buddies text logo" className="logo-txt hide logo-top"></img> */}
 				<WideNavbar pages={pageLinks} />
 				<Hamburger pages={pageLinks} />
 			</div>

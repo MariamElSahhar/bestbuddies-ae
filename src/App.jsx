@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scroll-to-top";
 import { QueryClient, QueryClientProvider } from "react-query";
 // Pages
@@ -25,7 +25,7 @@ const queryClient = new QueryClient();
 const App = () => {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
+			<HashRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="about" element={<AboutPage />} />
@@ -61,7 +61,7 @@ const App = () => {
 					</Route>
 				</Routes>
 				<ScrollToTop />
-			</BrowserRouter>
+			</HashRouter>
 		</QueryClientProvider>
 	);
 };
