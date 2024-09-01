@@ -25,6 +25,7 @@ export default function ContactPage() {
 						<h1>
 							Thanks for your message! We'll get back to you soon.
 						</h1>
+						<p>(This form is disable for this demo version of the website)</p>
 						<button onClick={handleNewSubmission}>
 							Send another message
 						</button>
