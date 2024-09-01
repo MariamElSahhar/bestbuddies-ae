@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bestbuddies-ae/static/css/main.0d4646fd.css",
+    "main.js": "/bestbuddies-ae/static/js/main.2aa5c9e8.js",
+    "index.html": "/bestbuddies-ae/index.html",
+    "main.0d4646fd.css.map": "/bestbuddies-ae/static/css/main.0d4646fd.css.map",
+    "main.2aa5c9e8.js.map": "/bestbuddies-ae/static/js/main.2aa5c9e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d4646fd.css",
+    "static/js/main.2aa5c9e8.js"
+  ]
+}
