@@ -3,7 +3,7 @@ import "../styles/about.css";
 // import { Outlet, Link } from "react-router-dom";
 
 // import Page from '../components/Page';
-import Partners from "../components/Partners";
+import Partners from "../components/partners";
 // import Committee from '../components/Committee'
 import PageTemplate from "../templates/page-template";
 

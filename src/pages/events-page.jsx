@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
-import Post from "../components/Post";
+import Post from "../components/event-card";
 import PageTemplate from "../templates/page-template";
+import { useGetEventsData } from "../hooks/use-get-events-data";
+import DemoWebsiteTag from "../components/demo-website-tag";
+import "../styles/common.css";
+import "../styles/events.css";
+import EventCard from "../components/event-card";
 
 export default function EventsPage() {
-	const [posts, setPosts] = useState([]);
-	useEffect(() => {
-		fetch("https://bestbuddies.ae/wp/wp-json/wp/v2/posts")
-			.then((response) => response.json())
-			.then((posts) => {
-				// Handle the posts data
-				setPosts(posts);
-			})
-			.catch((error) => {
-				// Handle errors
-				console.error("Error fetching posts:", error);
-			});
-	}, []);
-	console.log(posts);
+	const { isLoading, data, isError } = useGetEventsData();
+
 	return (
 		<PageTemplate header="Attend an Event">
-			<div id="event-page" className="involved-page">
-				{posts.map((post) => (
-					<Post key={post.id} post={post} />
-				))}
+			<div id="events-page">
+				<DemoWebsiteTag />
+				<div id="events-page-content">
+					<div className="events-container">
+						{isLoading && <h1>Loading events...</h1>}
+						{isError && <h1>Error loadinge events...</h1>}
+						{data?.data.map((event) => (
+							<EventCard key={event.id} event={event} />
+						))}
+					</div>
+				</div>
 			</div>
 		</PageTemplate>
 	);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function WideNavbar({ pages }) {
 	return (
@@ -8,7 +8,10 @@ export default function WideNavbar({ pages }) {
 				<li className="navbar-li" key={page.address} id={page.address}>
 					{page.menu ? (
 						<div className="dropdown-wrapper">
-							<Link to={page.address}> {page.name} </Link>
+							<NavLink to={page.address} activeClassName="active">
+								{" "}
+								{page.name}{" "}
+							</NavLink>
 							<ul className="dropdown-menu">
 								{page.subPages.map((subPage) => (
 									<li
@@ -16,17 +19,21 @@ export default function WideNavbar({ pages }) {
 										key={subPage.address}
 										id={subPage.address}
 									>
-										<Link
+										<NavLink
 											to={`${subPage.address}`}
+											activeClassName="active"
 										>
 											{subPage.name}
-										</Link>
+										</NavLink>
 									</li>
 								))}
 							</ul>
 						</div>
 					) : (
-						<Link to={page.address}> {page.name} </Link>
+						<NavLink to={page.address} activeClassName="active">
+							{" "}
+							{page.name}{" "}
+						</NavLink>
 					)}
 				</li>
 			))}

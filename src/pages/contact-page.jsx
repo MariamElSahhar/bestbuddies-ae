@@ -3,7 +3,7 @@ import { useState } from "react";
 import "react-international-phone/style.css";
 import "../styles/common.css";
 import "../styles/contact.css";
-import ContactForm from "../components/contact/ContactForm";
+import ContactForm from "../components/contact/contact-form";
 import PageTemplate from "../templates/page-template";
 
 export default function ContactPage() {
@@ -25,7 +25,10 @@ export default function ContactPage() {
 						<h1>
 							Thanks for your message! We'll get back to you soon.
 						</h1>
-						<p>(This form is disable for this demo version of the website)</p>
+						<p>
+							(This form is disable for this demo version of the
+							website)
+						</p>
 						<button onClick={handleNewSubmission}>
 							Send another message
 						</button>

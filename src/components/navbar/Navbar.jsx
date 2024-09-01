@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 import "../../styles/navbar.css";
 // import LanguageToggle from "../LanguageToggle";
-import Hamburger from "./Hamburger";
-import WideNavbar from "./WideNavbar";
+import Hamburger from "./hamburger";
+import WideNavbar from "./wide-navbar";
 
 const pageLinks = [
 	{ name: "Home", address: "/", menu: false },

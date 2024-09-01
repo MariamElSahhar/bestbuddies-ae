@@ -1,6 +1,6 @@
 import "../styles/common.css";
 import PageTemplate from "../templates/page-template";
-import ComingSoon from "../components/ComingSoon";
+import ComingSoon from "../components/coming-soon-tag";
 
 export default function FAQ() {
 	return (

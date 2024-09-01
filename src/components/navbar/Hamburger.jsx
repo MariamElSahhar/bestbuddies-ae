@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useClickAway } from "react-use";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
+import Dropdown from "./dropdown";
 
 import "../../styles/navbar.css";
 

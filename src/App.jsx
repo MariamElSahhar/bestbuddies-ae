@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/scroll-to-top";
+import { QueryClient, QueryClientProvider } from "react-query";
 // Pages
 import AboutPage from "./pages/about-page";
 import BecomeABuddyPage from "./pages/get-involved/get-involved-pages/become-a-buddy-page";
@@ -19,39 +20,49 @@ import Media from "./pages/media-page";
 import BecomeAMentor from "./pages/get-involved/get-involved-pages/become-a-mentor-page";
 import ProgramsPage from "./pages/programs/programs-page";
 
+const queryClient = new QueryClient();
+
 const App = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route index element={<HomePage />} />
-				<Route path="about" element={<AboutPage />} />
-				<Route path="contact-us" element={<ContactPage />} />
-				<Route path="donate" element={<Donate />} />
-				<Route path="FAQ" element={<FAQ />} />
-				<Route path="events" element={<EventsPage />} />
-				<Route path="get-involved">
-					<Route index element={<GetInvolvedPage />} />
-					<Route
-						path="become-a-buddy"
-						element={<BecomeABuddyPage />}
-					/>
-					<Route path="become-a-mentor" element={<BecomeAMentor />} />
-					<Route
-						path="become-an-employer"
-						element={<BecomeAnEmployerPage />}
-					/>
-					<Route path="start-a-chapter" element={<StartAChapter />} />
-				</Route>
-				<Route path="media" element={<Media />} />
-				<Route path="programs">
-					<Route index element={<ProgramsPage />} />
-					<Route path="friendship" element={<FriendshipPage />} />
-					<Route path="employment" element={<EmploymentPage />} />
-					<Route path="leadership" element={<LeadershipPage />} />
-				</Route>
-			</Routes>
-			<ScrollToTop />
-		</BrowserRouter>
+		<QueryClientProvider client={queryClient}>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<HomePage />} />
+					<Route path="about" element={<AboutPage />} />
+					<Route path="contact-us" element={<ContactPage />} />
+					<Route path="donate" element={<Donate />} />
+					<Route path="FAQ" element={<FAQ />} />
+					<Route path="events" element={<EventsPage />} />
+					<Route path="get-involved">
+						<Route index element={<GetInvolvedPage />} />
+						<Route
+							path="become-a-buddy"
+							element={<BecomeABuddyPage />}
+						/>
+						<Route
+							path="become-a-mentor"
+							element={<BecomeAMentor />}
+						/>
+						<Route
+							path="become-an-employer"
+							element={<BecomeAnEmployerPage />}
+						/>
+						<Route
+							path="start-a-chapter"
+							element={<StartAChapter />}
+						/>
+					</Route>
+					<Route path="media" element={<Media />} />
+					<Route path="programs">
+						<Route index element={<ProgramsPage />} />
+						<Route path="friendship" element={<FriendshipPage />} />
+						<Route path="employment" element={<EmploymentPage />} />
+						<Route path="leadership" element={<LeadershipPage />} />
+					</Route>
+				</Routes>
+				<ScrollToTop />
+			</BrowserRouter>
+		</QueryClientProvider>
 	);
 };
 

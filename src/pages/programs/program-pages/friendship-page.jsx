@@ -1,6 +1,6 @@
 import "../../../styles/common.css";
 import "../../../styles/programs.css";
-import ComingSoon from "../../../components/ComingSoon";
+import ComingSoon from "../../../components/coming-soon-tag";
 import PageTemplate from "../../../templates/page-template";
 
 export default function FriendshipPage() {

@@ -1,6 +1,6 @@
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Navbar from "../components/navbar/navbar";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function PageTemplate({ header = "", children }) {
 	return (

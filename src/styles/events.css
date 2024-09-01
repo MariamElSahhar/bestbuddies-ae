@@ -1,0 +1,49 @@
+#events-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	#events-page-content {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.events-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+			padding: 20px;
+
+			.event-card {
+				background-color: white;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				width: 300px;
+				max-width: 300px;
+				padding: 16px;
+				text-align: center;
+				transition: transform 0.2s ease-in-out;
+
+				&:hover {
+					transform: translateY(-5px);
+				}
+
+				.event-title {
+					font-size: 20px;
+					color: #333;
+					margin-bottom: 10px;
+				}
+
+				.event-content {
+					font-size: 14px;
+					color: #555;
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+}

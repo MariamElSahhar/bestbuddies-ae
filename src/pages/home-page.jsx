@@ -1,7 +1,7 @@
 import "../styles/common.css";
 import "../styles/home.css";
-import Partners from "../components/Partners";
-import ProgramsSection from "../components/ProgramsSection";
+import Partners from "../components/partners";
+import ProgramsSection from "../components/programs-section";
 import PageTemplate from "../templates/page-template";
 
 export default function HomePage() {
