@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import '../styles/programs.css'
-import { Outlet, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const ProgramsSection = () => {
   return (

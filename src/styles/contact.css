@@ -1,24 +1,20 @@
 #contact-page {
-    #contact-page-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
-        button {
-            background-color: var(--font-purple);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: .75rem;
-            font-size: 1rem;
-            /* width: 50%; */
-        }
+    button {
+        background-color: var(--font-purple);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: .75rem;
+        font-size: 1rem;
     }
 
     #contact-form {
         width: 80%;
-        /* height: fit-content; */
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -37,7 +33,21 @@
             > div, >button {
                 margin: 1rem 0 0;
                 width: 90%;
+            }
 
+            .react-international-phone-input-container {
+                
+                button {
+                    background-color: var(--font-purple);
+                   
+                }
+                .react-international-phone-country-selector-button__dropdown-arrow {
+                    border-top-color: #fff;
+                }
+                input {
+                    width: 100%;
+                    margin-left: 10px;
+                }
             }
         }
 
@@ -45,16 +55,6 @@
             height: 100%;
             align-self: stretch;
         }
-
-        input {
-            font-size: 1rem;
-            padding: .75rem;
-        }
-
-    }
-    
-    input:focus, textarea:focus {
-        outline-color: var(--font-purple);
     }
 
     .input-field {
@@ -64,27 +64,39 @@
         text-align: left;
         justify-content: left;
         caret-color: var(--font-purple);
+
         textarea {
             resize: none;
             height: 233px;
             font-family: "Helvetica Neue", sans-serif;
             font-size: 1rem;
             padding: 0.5rem;
-            :focus {
-                outline-color: var(--font-purple);
-            }
         }
+
+
+        input, textarea {
+            font-size: 1rem;
+            padding: .75rem;
+            border-radius: var(--border-radius);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            color: var(--font);
+        }
+        
+        input:focus, textarea:focus {
+            outline: 1px solid var(--light-purple);
+        }
+
         .empty-field {
             color: #91193d;
         }
+
         .optional {
             color: #666;
             font-size: 0.75rem;
         }
-
     }
-
-    
 
     #thanks {
         display: flex;
