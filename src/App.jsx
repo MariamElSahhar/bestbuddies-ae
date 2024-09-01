@@ -25,9 +25,9 @@ const queryClient = new QueryClient();
 const App = () => {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Routes>
-					<Route index element={<HomePage />} />
+					<Route path="/" element={<HomePage />} />
 					<Route path="about" element={<AboutPage />} />
 					<Route path="contact-us" element={<ContactPage />} />
 					<Route path="donate" element={<Donate />} />
