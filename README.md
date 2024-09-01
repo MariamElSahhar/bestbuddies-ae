@@ -5,7 +5,11 @@ Best Buddies UAE is a volunteer organization that creates opportunities for one-
 ## Tools Used
 - HTML, CSS, and React.js for front-end 🖌️
 - PHP and SQL for back-end (contact form and sign-up form) 💬
-- [In progress 🤞🏼] Wordpress Headless CMS for content management 🗓️
+- Wordpress API for content management 🗓️
+
+## Improvements
+- Use Tailwind instead of CSS files
+- Use a Tailwind framework like Material UI
 
 ## Create React App
 

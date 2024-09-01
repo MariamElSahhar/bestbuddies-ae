@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Post from "../components/event-card";
+import React from "react";
 import PageTemplate from "../templates/page-template";
 import { useGetEventsData } from "../hooks/use-get-events-data";
 import DemoWebsiteTag from "../components/demo-website-tag";

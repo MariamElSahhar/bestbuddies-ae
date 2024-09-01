@@ -1,11 +1,6 @@
 import React from "react";
 
 export default function EventCard({ event }) {
-	const stripHtmlTags = (htmlContent) => {
-		const tempElement = document.createElement("div");
-		tempElement.innerHTML = htmlContent;
-		return tempElement.textContent || tempElement.innerText;
-	};
 
 	return (
 		<div key={event.id} className="event-card">
