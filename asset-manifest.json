@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bestbuddies-ae/static/css/main.0f65a5c9.css",
-    "main.js": "/bestbuddies-ae/static/js/main.08201c63.js",
+    "main.js": "/bestbuddies-ae/static/js/main.8f912e49.js",
     "index.html": "/bestbuddies-ae/index.html",
     "main.0f65a5c9.css.map": "/bestbuddies-ae/static/css/main.0f65a5c9.css.map",
-    "main.08201c63.js.map": "/bestbuddies-ae/static/js/main.08201c63.js.map"
+    "main.8f912e49.js.map": "/bestbuddies-ae/static/js/main.8f912e49.js.map"
   },
   "entrypoints": [
     "static/css/main.0f65a5c9.css",
-    "static/js/main.08201c63.js"
+    "static/js/main.8f912e49.js"
   ]
 }
