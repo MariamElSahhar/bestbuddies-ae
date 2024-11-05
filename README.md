@@ -3,7 +3,7 @@
 Best Buddies UAE is a volunteer organization that creates opportunities for one-to-one friendships, integrated employment, and leadership development for People of Determination (people with intellectual and developmental disabilities).
 
 ## Tools Used
-- HTML, CSS, and React.js for front-end 🖌️
+- React.js for front-end 🖌️
 - PHP and SQL for back-end (contact form and sign-up form) 💬
 - Wordpress API for content management 🗓️
 
@@ -12,7 +12,6 @@ Best Buddies UAE is a volunteer organization that creates opportunities for one-
 - Use a Tailwind framework like Material UI
 
 ## Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can run:
 
 ### `npm start`
